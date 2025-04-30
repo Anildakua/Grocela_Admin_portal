@@ -8,10 +8,8 @@ public class propartiesClass {
 
 	public String inputData(String key) throws Exception
 	{
-		FileInputStream file=new FileInputStream("./src/test/resources/Grocela.proparties");
 		Properties pro=new Properties();
-		pro.load(file);
-		
+		pro.load(new FileInputStream("./src/test/resources/Grocela.proparties"));
 		return pro.getProperty(key); 
 	}
 

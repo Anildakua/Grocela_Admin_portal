@@ -36,4 +36,11 @@ public class loginPOM {
 		return login;
 	}
 	
+	@FindBy (xpath = "//p[text()='Login info is not valid.']")
+	WebElement notvalid_text;
+	
+	public WebElement notvalid_text()
+	{
+		return notvalid_text;
+	}
 }

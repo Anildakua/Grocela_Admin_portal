@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestScripts.LoginClass">
+      <class name="TestScripts.HomePageBannerClass">
         <methods>
-          <include name="nagetive"/>
+          <include name="AddHomePageBanner"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- TestScripts.LoginClass -->
+      </class> <!-- TestScripts.HomePageBannerClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
