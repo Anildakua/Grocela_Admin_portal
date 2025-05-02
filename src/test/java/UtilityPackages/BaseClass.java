@@ -1,10 +1,12 @@
 package UtilityPackages;
 
+import java.awt.Robot;
 import java.time.Duration;
 
 import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -27,6 +29,7 @@ public class BaseClass {
 	public WebDriverWait wait;
 	public HomePageBannerPOM home;
 	public ExcelUtils excel;
+	public Actions action;
 	
 	
 	public void test() 
@@ -37,6 +40,7 @@ public class BaseClass {
 		login =new loginPOM(driver);
 		home =new HomePageBannerPOM(driver);
 		excel=new ExcelUtils();
+		action=new Actions(driver);
 	}
 	
 	@BeforeClass
@@ -93,11 +97,11 @@ public class BaseClass {
 	}
 	
 	@AfterClass
-	public void afterClass() throws Exception 
+	public void afterClass() 
 	{
 		//Thread.sleep(2000);
-//		home.signOut_window();
-//		home.signout_button().click();
-//		driver.quit();
+		home.signOut_window();
+		home.signout_button().click();
+		driver.quit();
 	}
 }

@@ -13,5 +13,4 @@ public class ExcelUtils
 		return WorkbookFactory.create(new FileInputStream("./src/test/resources/grocela_Admin_Portal.xlsx")).getSheet(Sheet).getRow(row).getCell(cell).toString();
 
 	}
-
 }
