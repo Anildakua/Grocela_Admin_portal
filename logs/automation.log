@@ -1,0 +1,8 @@
+15:12:00.647 [main] INFO  TestScripts.HomePageBannerClass - Starting AddHomePageBanner test
+15:12:00.658 [main] INFO  TestScripts.HomePageBannerClass - Navigated to the correct page
+15:12:01.331 [main] INFO  TestScripts.HomePageBannerClass - Title and subtitle retrieved from Excel and entered
+15:12:01.477 [main] INFO  TestScripts.HomePageBannerClass - Drop-down value 'NO' selected successfully
+15:12:01.504 [main] INFO  TestScripts.HomePageBannerClass - Navigated to Choose File button
+15:12:01.572 [main] INFO  TestScripts.HomePageBannerClass - Image path copied successfully
+15:12:02.591 [main] INFO  TestScripts.HomePageBannerClass - Image uploaded successfully
+15:12:04.219 [main] INFO  TestScripts.HomePageBannerClass - Save action completed successfully
