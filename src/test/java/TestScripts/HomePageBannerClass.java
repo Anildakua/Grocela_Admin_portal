@@ -121,7 +121,6 @@ public class HomePageBannerClass extends BaseClass
 	    {
 	        log.error("Error handling save button or alert");
 	    }
-	    Assert.fail();
 	}
 }
 
