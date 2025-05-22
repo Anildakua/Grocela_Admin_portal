@@ -19,6 +19,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
+import POM_Package.CreateCategoryPOM;
 import POM_Package.HomePageBannerPOM;
 import POM_Package.loginPOM;
 import TestScripts.LoginClass;
@@ -33,7 +34,7 @@ public class BaseClass {
 	public ExcelUtils excel;
 	public Actions action;
 	public static Logger log;
-	
+	public CreateCategoryPOM category;
 	
 	public void test() 
 	{
@@ -44,6 +45,7 @@ public class BaseClass {
 		home =new HomePageBannerPOM(driver);
 		excel=new ExcelUtils();
 		action=new Actions(driver);
+		category=new CreateCategoryPOM(driver);
 	}
 	
 	@BeforeClass

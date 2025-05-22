@@ -67,4 +67,11 @@ public class HomePageBannerPOM
 	{
 		return Save;
 	}
+	
+	@FindBy (xpath = "//span[text()='Product Management']")
+	WebElement product_M;
+	
+	public WebElement productManegement() {
+		return product_M;
+	}
 }
