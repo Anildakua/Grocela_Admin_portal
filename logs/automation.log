@@ -6,3 +6,68 @@
 15:12:01.572 [main] INFO  TestScripts.HomePageBannerClass - Image path copied successfully
 15:12:02.591 [main] INFO  TestScripts.HomePageBannerClass - Image uploaded successfully
 15:12:04.219 [main] INFO  TestScripts.HomePageBannerClass - Save action completed successfully
+17:35:58.969 [main] INFO  TestScripts.CreateCategory - CreateCategory test case started
+17:35:59.488 [main] INFO  TestScripts.CreateCategory - Vertical is selected
+17:36:00.189 [main] INFO  TestScripts.CreateCategory - category name entered
+17:36:00.281 [main] INFO  TestScripts.CreateCategory - category Description entered
+17:36:00.281 [main] INFO  TestScripts.CreateCategory - Save button clicked
+17:37:05.809 [main] INFO  TestScripts.CreateCategory - CreateCategory test case started
+17:37:06.284 [main] INFO  TestScripts.CreateCategory - Vertical is selected
+17:37:06.829 [main] INFO  TestScripts.CreateCategory - category name entered
+17:38:20.806 [main] INFO  TestScripts.CreateCategory - CreateCategory test case started
+17:38:21.255 [main] INFO  TestScripts.CreateCategory - Vertical is selected
+17:38:21.780 [main] INFO  TestScripts.CreateCategory - category name entered
+17:39:12.296 [main] INFO  TestScripts.CreateCategory - CreateCategory test case started
+17:39:12.855 [main] INFO  TestScripts.CreateCategory - Vertical is selected
+17:39:13.529 [main] INFO  TestScripts.CreateCategory - category name entered
+17:39:13.756 [main] INFO  TestScripts.CreateCategory - category Description entered
+17:39:13.756 [main] INFO  TestScripts.CreateCategory - Save button clicked
+17:43:19.720 [main] INFO  TestScripts.CreateCategory - CreateCategory test case started
+17:43:20.265 [main] INFO  TestScripts.CreateCategory - Vertical is selected
+17:43:20.863 [main] INFO  TestScripts.CreateCategory - category name entered
+17:43:21.059 [main] INFO  TestScripts.CreateCategory - category Description entered
+17:43:21.628 [main] INFO  TestScripts.CreateCategory - Add action completed successfully
+18:04:47.676 [main] INFO  TestScripts.HomePageBannerClass - Starting AddHomePageBanner test
+18:04:47.684 [main] INFO  TestScripts.HomePageBannerClass - Navigated to the correct page
+18:04:48.224 [main] INFO  TestScripts.HomePageBannerClass - Title and subtitle retrieved from Excel and entered
+18:04:48.340 [main] INFO  TestScripts.HomePageBannerClass - Drop-down value 'NO' selected successfully
+18:04:48.366 [main] INFO  TestScripts.HomePageBannerClass - Navigated to Choose File button
+18:04:48.452 [main] INFO  TestScripts.HomePageBannerClass - Image path copied successfully
+18:04:49.473 [main] INFO  TestScripts.HomePageBannerClass - Image uploaded successfully
+18:04:59.722 [main] ERROR TestScripts.HomePageBannerClass - Error handling save button or alert
+18:05:20.807 [main] INFO  TestScripts.HomePageBannerClass - Starting AddHomePageBanner test
+18:05:20.816 [main] INFO  TestScripts.HomePageBannerClass - Navigated to the correct page
+18:05:21.496 [main] INFO  TestScripts.HomePageBannerClass - Title and subtitle retrieved from Excel and entered
+18:05:21.649 [main] INFO  TestScripts.HomePageBannerClass - Drop-down value 'NO' selected successfully
+18:05:21.679 [main] INFO  TestScripts.HomePageBannerClass - Navigated to Choose File button
+18:05:21.754 [main] INFO  TestScripts.HomePageBannerClass - Image path copied successfully
+18:05:22.775 [main] INFO  TestScripts.HomePageBannerClass - Image uploaded successfully
+18:05:23.370 [main] INFO  TestScripts.HomePageBannerClass - Save action completed successfully
+18:05:59.881 [main] INFO  TestScripts.CreateCategory - CreateCategory test case started
+18:06:00.389 [main] INFO  TestScripts.CreateCategory - Vertical is selected
+18:06:01.133 [main] ERROR TestScripts.CreateCategory - Failed to retrieve data from Excel
+18:06:01.724 [main] INFO  TestScripts.CreateCategory - Add action completed successfully
+18:07:02.341 [main] INFO  TestScripts.HomePageBannerClass - Starting AddHomePageBanner test
+18:07:02.351 [main] INFO  TestScripts.HomePageBannerClass - Navigated to the correct page
+18:07:03.029 [main] INFO  TestScripts.HomePageBannerClass - Title and subtitle retrieved from Excel and entered
+18:07:03.207 [main] INFO  TestScripts.HomePageBannerClass - Drop-down value 'NO' selected successfully
+18:07:03.260 [main] INFO  TestScripts.HomePageBannerClass - Navigated to Choose File button
+18:07:03.328 [main] INFO  TestScripts.HomePageBannerClass - Image path copied successfully
+18:07:04.350 [main] INFO  TestScripts.HomePageBannerClass - Image uploaded successfully
+18:07:09.000 [main] ERROR TestScripts.HomePageBannerClass - Error handling save button or alert
+18:07:39.324 [main] INFO  TestScripts.HomePageBannerClass - Starting AddHomePageBanner test
+18:07:39.335 [main] INFO  TestScripts.HomePageBannerClass - Navigated to the correct page
+18:07:40.031 [main] INFO  TestScripts.HomePageBannerClass - Title and subtitle retrieved from Excel and entered
+18:07:40.190 [main] INFO  TestScripts.HomePageBannerClass - Drop-down value 'NO' selected successfully
+18:07:40.243 [main] INFO  TestScripts.HomePageBannerClass - Navigated to Choose File button
+18:07:40.318 [main] INFO  TestScripts.HomePageBannerClass - Image path copied successfully
+18:07:41.338 [main] INFO  TestScripts.HomePageBannerClass - Image uploaded successfully
+18:07:47.045 [main] ERROR TestScripts.HomePageBannerClass - Error handling save button or alert
+18:08:42.386 [main] INFO  TestScripts.CreateCategory - CreateCategory test case started
+18:08:42.961 [main] INFO  TestScripts.CreateCategory - Vertical is selected
+18:08:43.476 [main] ERROR TestScripts.CreateCategory - Failed to retrieve data from Excel
+18:08:44.050 [main] INFO  TestScripts.CreateCategory - Add action completed successfully
+18:09:31.902 [main] INFO  TestScripts.CreateCategory - CreateCategory test case started
+18:09:32.372 [main] INFO  TestScripts.CreateCategory - Vertical is selected
+18:09:33.091 [main] INFO  TestScripts.CreateCategory - Title and subtitle retrieved from Excel and entered
+18:09:36.666 [main] INFO  TestScripts.CreateCategory - Add action completed successfully

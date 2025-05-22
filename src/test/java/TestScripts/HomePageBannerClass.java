@@ -39,8 +39,8 @@ public class HomePageBannerClass extends BaseClass
 
 		try 
 		{
-			home.title_box().sendKeys(excel.inputData("Sheet1", 1, 1));
-			home.sub_title_box().sendKeys(excel.inputData("Sheet1", 1, 2));
+			home.title_box().sendKeys(excel.inputData("Sheet1", 2, 1));
+			home.sub_title_box().sendKeys(excel.inputData("Sheet1", 2, 2));
 			log.info("Title and subtitle retrieved from Excel and entered");
         } 
 		catch (Exception e) 
