@@ -1,5 +1,7 @@
 package TestScripts;
 
+import static org.testng.Assert.fail;
+
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
@@ -16,48 +18,75 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.Assertion;
 
-import POM_Packages.HomePageBannerPOM;
-import UtilityPackages.BaseClass;
-
+import POM_Package.HomePageBannerPOM;
+import UtilityPackage.BaseClass;
+import UtilityPackage.listnerClass;
+@Listeners(listnerClass.class)
 public class HomePageBannerClass extends BaseClass
 {
 	@Test
-	public void AddHomePageBanner()
+	public void AddHomePageBanner() throws Exception
 	{
-		//Verify is in correct page 
-		Assert.assertEquals(driver.getCurrentUrl(),"http://admin.unosysdev.com/BannerController","its show not get the home page");
+		log.info("Starting AddHomePageBanner test");
+
+	    // Verify correct page
+	    Assert.assertEquals(driver.getCurrentUrl(), "http://admin.unosysdev.com/BannerController","Home page not loaded");
+	    log.info("Navigated to the correct page");
+
 		try 
 		{
 			home.title_box().sendKeys(excel.inputData("Sheet1", 1, 1));
 			home.sub_title_box().sendKeys(excel.inputData("Sheet1", 1, 2));
-		} 
-		catch (Exception e)
-		{
-			System.out.println("not get the excel data"+e);
-		}
-		
-		//Select "NO" in the drop down
-		Select select=new Select(home.is_btn_title());
-		home.is_btn_title().click();
-		select.getOptions().getFirst().click();
-		
-		//Click on the Choose file button
-		action.keyDown(Keys.TAB).keyUp(Keys.TAB).perform();
-		action.keyDown(Keys.TAB).keyUp(Keys.TAB).sendKeys(Keys.ENTER).perform();
-		
-		//Image path created
-		try 
-		{
-			StringSelection filepath = new StringSelection(pro.inputData("imaigePath"));
-			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filepath, null);
-		}
+			log.info("Title and subtitle retrieved from Excel and entered");
+        } 
 		catch (Exception e) 
 		{
-			System.out.println("Imaige file path not availabl"+e);
+            log.error("Failed to retrieve data from Excel");
 		}
 		
+		// Select 'NO' from the drop-down 
+        try
+        {
+            Select select = new Select(home.is_btn_title());
+            home.is_btn_title().click();
+            select.getOptions().getFirst().click();
+            log.info("Drop-down value 'NO' selected successfully");
+        } 
+        catch (Exception e) 
+        {
+            log.error("Drop-down selection failed");
+        }
+        
+        
+        // Click Choose File button
+        try 
+        {
+            action.keyDown(Keys.TAB).keyUp(Keys.TAB).perform();
+            action.keyDown(Keys.TAB).keyUp(Keys.TAB).sendKeys(Keys.ENTER).perform();
+            log.info("Navigated to Choose File button");
+        } 
+        catch (Exception e)
+        {
+            log.error("File selection failed");
+        }
+        
+    	//Image path created
+    	try 
+    	{
+    		StringSelection filepath = new StringSelection(pro.inputData("imaigePath"));
+    		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filepath, null);
+    	    log.info("Image path copied successfully");
+        } 
+    	catch (Exception e) 
+    	{
+            log.error("Image file path not available");
+        }
+
+        
 		// image file uploaded 
 		try
 		{
@@ -69,20 +98,38 @@ public class HomePageBannerClass extends BaseClass
 			robot.keyPress(KeyEvent.VK_ENTER);
 			robot.keyRelease(KeyEvent.VK_ENTER);
 			Thread.sleep(1000);
-		}
-		catch (AWTException e)
+		    log.info("Image uploaded successfully");
+        } 
+		catch (AWTException e) 
 		{
-			System.out.println("Imaige not uploaded"+e);
-		} 
+            log.error("Image upload failed");
+        }
 		catch (InterruptedException e) 
 		{
-			System.out.println("file upload thread is not working"+e);
-		}
+            log.error("File upload thread interrupted");
+        }
 		
-		//Click the save button and hendel pop-up
-		home.Save_button().click();
-		wait.until(ExpectedConditions.alertIsPresent());
-		driver.switchTo().alert().accept();
-
+		// Click the save button and handle pop-up
+	    try
+	    {
+	        home.Save_button().click();
+	        wait.until(ExpectedConditions.alertIsPresent());
+	        driver.switchTo().alert().accept();
+	        log.info("Save action completed successfully");
+	    } 
+	    catch (Exception e)
+	    {
+	        log.error("Error handling save button or alert");
+	    }
+	    Assert.fail();
 	}
 }
+
+
+	
+	
+
+	
+	
+	
+

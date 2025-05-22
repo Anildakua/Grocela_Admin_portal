@@ -1,8 +1,10 @@
-package UtilityPackages;
+package UtilityPackage;
 
 import java.awt.Robot;
 import java.time.Duration;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,19 +19,20 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
-import POM_Packages.HomePageBannerPOM;
-import POM_Packages.loginPOM;
+import POM_Package.HomePageBannerPOM;
+import POM_Package.loginPOM;
 import TestScripts.LoginClass;
 
 public class BaseClass {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public propartiesClass pro;
 	public loginPOM login;
 	public WebDriverWait wait;
 	public HomePageBannerPOM home;
 	public ExcelUtils excel;
 	public Actions action;
+	public static Logger log;
 	
 	
 	public void test() 
@@ -47,6 +50,7 @@ public class BaseClass {
 	public void beforeClass() 
 	{
 		test();
+		log=LogManager.getLogger(this.getClass());
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		try
@@ -99,7 +103,7 @@ public class BaseClass {
 	@AfterClass
 	public void afterClass() 
 	{
-		//Thread.sleep(2000);
+		//logout form the application
 		home.signOut_window();
 		home.signout_button().click();
 		driver.quit();

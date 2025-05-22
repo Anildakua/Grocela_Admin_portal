@@ -1,4 +1,4 @@
-package UtilityPackages;
+package UtilityPackage;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

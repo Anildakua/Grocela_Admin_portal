@@ -6,10 +6,10 @@
       <class name="TestScripts.HomePageBannerClass">
         <methods>
           <include name="AddHomePageBanner"/>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
         </methods>
       </class> <!-- TestScripts.HomePageBannerClass -->
     </classes>
